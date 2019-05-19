@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+</head>
+<body>
+	<h1 th:text="${titulo}"></h1>
+	
+	<samp th:text="${usuario.nombre}"></samp>
+	<samp th:text="${usuario.apellido}"></samp><br/>
+	<samp th:if="${usuario.email}" th:text="${usuario.email}"></samp><br/>
+	<samp th:if="${usuario.email == null}" th:text="'El Usuario No Tiene Correo'"></samp>
+</body>
+</html>
